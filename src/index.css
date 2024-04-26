@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+}
+body{
+  padding: 3rem 1rem;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.input-container > button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.9em;
+  color: #063ac9;
+  font-weight: 800;
+  background-color: #c4d6fd;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid gray;
+  border-left:none;
+}
+.input-container > input {
+  max-width: 500px;
+  height: 50px;
+  padding: 10px 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid gray;
+  font-size: 1.3rem;
+}
+.todo-container {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.todo-container > .todo {
+  width: 80%;
+  font-size: 1.3rem;
+  display: flex;
+  margin:0.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgb(125, 125, 125);
+  border-radius: 10px;
+  animation: add 0.3s ease 1;
+}
+.todo > .actions > input {
+  width: 30px;
+}
+.todo > .actions > button {
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ab0000;
+  background-color: #f6dfdf;
+  color: #ab0000;
+}
+@keyframes add {
+  0%{
+    opacity: 0;
+    transform: scale(0.8);
+  }100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
